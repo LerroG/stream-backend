@@ -134,7 +134,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "E:\\JS\\stream\\stream-backend\\prisma\\generated\\prisma",
+      "value": "E:\\JS\\stream\\stream-backend\\prisma\\generated",
       "fromEnvVar": null
     },
     "config": {
@@ -152,10 +152,10 @@ const config = {
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": "../../../.env",
-    "schemaEnvPath": "../../../.env"
+    "rootEnvPath": "../../.env",
+    "schemaEnvPath": "../../.env"
   },
-  "relativePath": "../..",
+  "relativePath": "..",
   "clientVersion": "6.7.0",
   "engineVersion": "3cff47a7f5d65c3ea74883f1d736e41d68ce91ed",
   "datasourceNames": [
@@ -170,8 +170,8 @@ const config = {
       }
     }
   },
-  "inlineSchema": "generator client {\n  provider = \"prisma-client-js\"\n  output   = \"./generated/prisma\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"POSTGRES_URI\")\n}\n\nmodel User {\n  id        String   @id @default(cuid())\n  createdAt DateTime @default(now()) @map(\"created_at\")\n  updatedAt DateTime @updatedAt @map(\"updated_at\")\n\n  email    String @unique\n  password String\n\n  username    String @unique\n  displayName String @map(\"display_name\")\n\n  avatar String?\n  bio    String?\n\n  @@map(\"users\")\n}\n",
-  "inlineSchemaHash": "dca4997b529675358d6c1ad2a93ca66ae3d8b8a0f7278e41190c1d1a1117a376",
+  "inlineSchema": "generator client {\n  provider = \"prisma-client-js\"\n  output   = \"./generated\"\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"POSTGRES_URI\")\n}\n\nmodel User {\n  id        String   @id @default(cuid())\n  createdAt DateTime @default(now()) @map(\"created_at\")\n  updatedAt DateTime @updatedAt @map(\"updated_at\")\n\n  email    String @unique\n  password String\n\n  username    String @unique\n  displayName String @map(\"display_name\")\n\n  avatar String?\n  bio    String?\n\n  @@map(\"users\")\n}\n",
+  "inlineSchemaHash": "250179ff2d54cee627c5105e54cf8057bcb601fdcc402b3995018878aca5b7e0",
   "copyEngine": true
 }
 config.dirname = '/'
