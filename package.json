@@ -22,10 +22,20 @@
 		"db:studio": "prisma studio"
 	},
 	"dependencies": {
+		"@apollo/server": "^4.12.0",
+		"@nestjs/apollo": "^13.1.0",
 		"@nestjs/common": "^11.0.1",
+		"@nestjs/config": "^4.0.2",
 		"@nestjs/core": "^11.0.1",
+		"@nestjs/graphql": "^13.1.0",
+		"@nestjs/mapped-types": "*",
 		"@nestjs/platform-express": "^11.0.1",
 		"@prisma/client": "^6.7.0",
+		"connect-redis": "^8.0.3",
+		"cookie-parser": "^1.4.7",
+		"express-session": "^1.18.1",
+		"graphql": "^16.11.0",
+		"ioredis": "^5.6.1",
 		"prisma": "^6.7.0",
 		"reflect-metadata": "^0.2.2",
 		"rxjs": "^7.8.1"
